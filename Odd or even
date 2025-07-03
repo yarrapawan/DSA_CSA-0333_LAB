@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int n, i, x;
+printf("Y.Pawan 192424294 ");
+    printf("Enter number of values: ");
+    scanf("%d", &n);
+
+    for (i = 0; i < n; i++) {
+        printf("Enter number: ");
+        scanf("%d", &x);
+
+        if (x % 2 == 0)
+            printf("%d is Even\n", x);
+        else
+            printf("%d is Odd\n", x);
+    }
+
+    return 0;
+}
