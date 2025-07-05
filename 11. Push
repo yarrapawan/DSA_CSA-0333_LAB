@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int stack[100], top = -1, n = 100, val, i;
+
+    printf("Y.Pawan 192424294");
+
+    printf("Enter value to push: ");
+    scanf("%d", &val);
+
+    if (top == n - 1) {
+        printf("Stack Overflow\n");
+    } else {
+        top = top + 1;
+        stack[top] = val;
+    }
+
+    for (i = top; i >= 0; i--) {
+        printf("%d ", stack[i]);
+    }
+
+    return 0;
+}
